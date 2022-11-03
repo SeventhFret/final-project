@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trispace:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/arduino-logo-1.png"
+      type="image/x-icon"
+    />
+    <title>Arduino Introduction</title>
+  </head>
+  <body>
+    <!-- SIDE BAR -->
+    <aside class="menu-side" id="side-bar">
+      <nav>
+        <h2>Navigation</h2>
+        <ul class="nav-list-item">
+          <li>
+            <a href="#">Home Page</a>
+          </li>
+          <li><a href="#what-is">What is Arduino?</a></li>
+          <li><a href="#boards">Arduino Boards</a></li>
+          <li><a href="#specs">Tech-specs</a></li>
+          <!-- <li><a href="#projects">Projects</a></li> -->
+          <li>
+            <a
+              href="https://www.arduino.cc"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Arduino Portal</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- FIRST BLOCK -->
+    <div class="first-block">
+      <div class="block-menu-button">
+        <button
+          type="button"
+          onclick="toggleSidebar()"
+          class="menu-button"
+          id="button-menu"
+        >
+          <img
+            id="navigation-gif"
+            class="navi-gif"
+            src="./images/giphy.webp"
+            alt="Whire arrow GIF"
+          />
+        </button>
+      </div>
+      <div class="first-block-content">
+        <h1>What is</h1>
+        <img
+          src="./images/arduino-logo-1.png"
+          alt="Arduino logo"
+          height="150"
+        />
+        <h1>Arduino?</h1>
+      </div>
+    </div>
+    <!-- SECOND BLOCK -->
+    <div class="second-block" id="what-is">
+      <div class="second-block-header">
+        <p class="fir-par-sec-bl">
+          <a
+            class="link-first"
+            href="https://www.arduino.cc/en/Guide/Introduction"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Arduino</a
+          >
+          is an open-source electronics platform based on easy-to-use hardware
+          and software. Arduino boards are able to read inputs - light on a
+          sensor, a finger on a button, or a Twitter message - and turn it into
+          an output - activating a motor, turning on an LED, publishing
+          something online. You can tell your board what to do by sending a set
+          of instructions to the microcontroller on the board. To do so you use
+          the Arduino programming language (based on Wiring), and the Arduino
+          Software (IDE), based on Processing.
+          <img
+            id="simp-gif"
+            class="img-second-block"
+            src="./images/ard1.gif"
+            alt="Arduino GIF"
+            height="150"
+          />
+        </p>
+      </div>
+    </div>
+    <!-- THIRD BLOCK -->
+    <div class="third-block" id="boards">
+      <div><h2>Arduino Boards:</h2></div>
+      <div class="third-block-content">
+        <!-- NANO -->
+        <div class="ard-nano">
+          <p class="third-block-content-header">Arduino Nano</p>
+          <a
+            href="https://store.arduino.cc/products/arduino-nano"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/arduino-nano.jpeg"
+              alt="Arduino Nano picture"
+              height="200"
+            />
+          </a>
+          <p class="third-block-content-text">
+            The Arduino Nano is a small, complete, and breadboard-friendly board
+            based on the ATmega328 (Arduino Nano 3.x). It has more or less the
+            same functionality of the Arduino Duemilanove, but in a different
+            package. It lacks only a DC power jack, and works with a Mini-B USB
+            cable instead of a standard one.
+          </p>
+        </div>
+        <!-- UNO -->
+        <div class="ard-uno">
+          <p class="third-block-content-header">Arduino Uno</p>
+          <a
+            href="https://store.arduino.cc/products/arduino-uno-rev3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/arduino-uno.jpeg"
+              alt="Arduino Nano picture"
+              height="200"
+              width="250"
+            />
+          </a>
+          <p class="third-block-content-text">
+            Arduino Uno is a microcontroller board based on the ATmega328P.
+            "Uno" means one in Italian and was chosen to mark the release of
+            Arduino Software (IDE) 1.0. The Uno board and version 1.0 of Arduino
+            Software (IDE) were the reference versions of Arduino, now evolved
+            to newer releases.
+          </p>
+        </div>
+        <!-- MEGA -->
+        <div class="ard-mega">
+          <p class="third-block-content-header">Arduino Mega2560</p>
+          <a
+            href="https://store.arduino.cc/products/arduino-mega-2560-rev3"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="./images/arduino-mega.jpeg"
+              alt="Arduino Mega2560 picture"
+              height="200"
+          /></a>
+          <p class="third-block-content-text">
+            The Arduino Mega 2560 is a microcontroller board based on the
+            ATmega2560. It contains everything needed to support the
+            microcontroller, simply connect it to a computer with a USB cable or
+            power it with a AC-to-DC adapter or battery to get started. The Mega
+            2560 board is compatible with most shields designed for the Uno and
+            the former boards Duemilanove or Diecimila.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- FOURTH BLOCK -->
+    <div class="fourth-block" id="specs">
+      <div class="fourth-block-header">
+        <h2>Technical specs of Arduino Boards</h2>
+        <img src="./images/gear.gif" alt="Gears gif" height="150" />
+      </div>
+      <div class="fourth-block-content">
+        <div class="nano-spec">
+          <h3>Arduino Nano</h3>
+          <table>
+            <tr>
+              <th>Сharacteristic</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>Microcontroller</td>
+              <td>ATmega328</td>
+            </tr>
+            <tr>
+              <td>Digital I/O Pins</td>
+              <td>22(6 of which are PWM)</td>
+            </tr>
+            <tr>
+              <td>Clock speed</td>
+              <td>16 MHz</td>
+            </tr>
+            <tr>
+              <td>Flash memory</td>
+              <td>32 KB of which 2 KB used by bootloader</td>
+            </tr>
+          </table>
+        </div>
+        <div class="nano-spec">
+          <h3>Arduino Uno</h3>
+          <table>
+            <tr>
+              <th>Сharacteristic</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>Microcontroller</td>
+              <td>ATmega328P</td>
+            </tr>
+            <tr>
+              <td>Digital I/O Pins</td>
+              <td>14(of which 6 provide PWM output)</td>
+            </tr>
+            <tr>
+              <td>Clock speed</td>
+              <td>16 MHz</td>
+            </tr>
+            <tr>
+              <td>Flash memory</td>
+              <td>32 KB (ATmega328P) of which 0.5 KB used by bootloader</td>
+            </tr>
+          </table>
+        </div>
+        <div class="nano-spec">
+          <h3>Arduino Mega2560</h3>
+          <table>
+            <tr>
+              <th>Сharacteristic</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>Microcontroller</td>
+              <td>ATmega2560</td>
+            </tr>
+            <tr>
+              <td>Digital I/O Pins</td>
+              <td>54(of which 15 provide PWM output)</td>
+            </tr>
+            <tr>
+              <td>Clock speed</td>
+              <td>16 MHz</td>
+            </tr>
+            <tr>
+              <td>Flash memory</td>
+              <td>256 KB of which 8 KB used by bootloader</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      const sideBar = document.getElementById("side-bar");
+      const menuButton = document.getElementById("navigation-gif");
+      function toggleSidebar() {
+        if (sideBar.className === "menu-side") {
+          sideBar.classList.add("menu-side-show");
+          menuButton.classList.add("navi-gif-show");
+        } else {
+          sideBar.classList.remove("menu-side-show");
+          menuButton.classList.remove("navi-gif-show");
+        }
+      }
+    </script>
+  </body>
+</html>
