@@ -131,7 +131,7 @@ body {
   background-attachment: fixed;
   z-index: 1500;
   filter: blur(2px);
-  margin-left: -1200px;
+  margin-left: -1000px;
   transform: scaleX(-1);
   scale: 0.5;
   transition: scale 0.5s;
@@ -146,7 +146,7 @@ body {
   transform: scaleX(1);
   scale: 0.5;
   filter: blur(0px);
-  margin-left: -465px;
+  margin-left: -500px;
 }
 
 .second-block {
